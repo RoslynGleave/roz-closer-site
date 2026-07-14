@@ -698,13 +698,6 @@ ul {
   color: var(--pop);
 }
 
-.industry-chip--placeholder {
-  color: var(--dusty-blue);
-  border-style: dashed;
-  font-weight: 400;
-  font-style: italic;
-}
-
 /* Distinct "pop in" entrance for the industry chips — overrides the
    sitewide .reveal fade/slide with a scale-up + slight bounce, staggered
    per chip via the existing inline transition-delay values. */
@@ -1222,15 +1215,6 @@ details[open] > .reason__summary:hover .reason__toggle-icon {
   font-size: 0.75rem;
   font-weight: 500;
   color: var(--dusty-blue);
-}
-
-.recs__trait {
-  font-family: var(--font-accent);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--on-dark-soft);
 }
 
 @media (max-width: 900px) {
