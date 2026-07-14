@@ -613,6 +613,10 @@ ul {
 }
 
 @media (max-width: 860px) {
+  .hero {
+    padding-top: var(--space-md);
+  }
+
   .hero__grid {
     grid-template-columns: 1fr;
     text-align: center;
@@ -633,7 +637,7 @@ ul {
   .hero__visual {
     max-width: 320px;
     margin-inline: auto;
-    margin-top: var(--space-lg);
+    margin-top: var(--space-sm);
     transform: none;
   }
 
