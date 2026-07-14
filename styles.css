@@ -157,12 +157,16 @@ ul {
 }
 
 .section {
-  padding-block: var(--space-2xl);
+  /* Top and bottom padding are split so top can be trimmed independently
+     — one consistent, reduced value above every section header. */
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-2xl);
 }
 
 @media (max-width: 900px) {
   .section {
-    padding-block: var(--space-xl);
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-xl);
   }
 }
 
@@ -719,11 +723,6 @@ ul {
 /* =============================================================================
    MY PITCH
    ============================================================================= */
-.pitch {
-  /* 5mm less space above "My Pitch" than the standard section padding. */
-  padding-top: calc(var(--space-2xl) - 5mm);
-}
-
 .pitch .section-header {
   /* Tighter gap so the video sits closer to "Why you should hire me". */
   margin-bottom: var(--space-md);
