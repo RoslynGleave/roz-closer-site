@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Prototype build: do not index until Roz approves this for wider review -->
+    <meta name="robots" content="noindex, nofollow" />
+
+    <title>Roz Gleave — High-Ticket Closer</title>
+    <meta
+      name="description"
+      content="Former founder and commercially experienced consultative seller with 20 years negotiating partnerships, growing accounts and selling complex business solutions."
+    />
+
+    <!-- Open Graph — TODO: replace og:image with a hosted image once the site is deployed -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Roz Gleave — High-Ticket Closer" />
+    <meta
+      property="og:description"
+      content="Former founder and commercially experienced consultative seller with 20 years negotiating partnerships, growing accounts and selling complex business solutions."
+    />
+    <meta property="og:image" content="og-placeholder.jpg" />
+
+    <!--
+      V2 design pass: black / white / dusty-blue / pop-pink-red palette,
+      Coterie + PP Gatwick headline/accent fonts. Content, structure and
+      section order are unchanged from index.html — see styles.css.
+
+      FONT LICENSING — once Coterie and PP Gatwick (Pangram Pangram) are
+      purchased, add their @font-face rules here (right below this comment)
+      pointing at the licensed .woff2 files, e.g.:
+
+        @font-face {
+          font-family: "Coterie";
+          src: url("/fonts/coterie.woff2") format("woff2");
+          font-weight: 400 700;
+          font-display: swap;
+        }
+        @font-face {
+          font-family: "PP Gatwick";
+          src: url("/fonts/gatwick.woff2") format("woff2");
+          font-weight: 400 700;
+          font-display: swap;
+        }
+
+      Then in styles.css, change ONLY the --font-headline and
+      --font-accent variable values to "Coterie" / "PP Gatwick" — every
+      rule in that file reads from the variables, never a hardcoded font
+      name, so it's a one-line swap per font.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- =====================================================================
+         NAV
+         ===================================================================== -->
+    <header class="nav" id="site-nav">
+      <div class="container nav__inner">
+        <a href="#top" class="nav__logo">Roz Gleave</a>
+
+        <nav class="nav__links" id="nav-links" aria-label="Primary">
+          <a href="#intro-video">My Pitch</a>
+          <a href="#proof">Proof</a>
+          <a href="#why-roz">Why Roz</a>
+          <a href="#industries">Industries</a>
+          <a href="#recommendations">Recommendations</a>
+          <a href="#lets-talk">Let's Talk</a>
+          <a href="#lets-talk" class="btn btn-primary nav__cta">Contact</a>
+        </nav>
+
+        <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===================================================================
+           HERO
+           =================================================================== -->
+      <section id="top" class="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy reveal">
+            <p class="hero__tagline">Ex-Founder <span class="pop-mark">&rarr;</span> High-Ticket Closer</p>
+            <h1 class="hero__headline">I don&rsquo;t sell<span class="pop-mark">.</span> I solve<span class="pop-mark">.</span></h1>
+            <p class="hero__sub">
+              Former founder and commercially experienced, intuitive seller with a track record of
+              building trust, solving real problems and helping people and businesses achieve their
+              goals.
+            </p>
+
+            <div class="hero__ctas">
+              <a href="#intro-video" class="btn btn-primary">Watch My Pitch</a>
+              <a href="#lets-talk" class="btn btn-secondary">Enquire to Hire Roz</a>
+            </div>
+          </div>
+
+          <div class="hero__visual reveal" style="transition-delay: 120ms">
+            <div class="hero__portrait-wrap">
+              <img
+                src="images/roz-portrait-flipped.jpg"
+                alt="Portrait of Roslyn (Roz) Gleave"
+                class="hero__portrait"
+                width="600"
+                height="900"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__stats-band">
+          <div class="container hero__stats">
+            <div class="hero-stat reveal">
+              <p class="hero-stat__value"><span class="hero-stat__number" data-count-to="1" data-prefix="$" data-suffix="M">0</span><span class="pop-mark">+</span></p>
+              <p class="hero-stat__label">Account budgets managed</p>
+            </div>
+            <div class="hero-stat reveal" style="transition-delay: 60ms">
+              <p class="hero-stat__value"><span class="hero-stat__number" data-count-to="5" data-prefix="$" data-suffix="K">0</span><span class="pop-mark">&ndash;</span><span class="hero-stat__number" data-count-to="150" data-prefix="$" data-suffix="K">0</span></p>
+              <p class="hero-stat__label">Deal range</p>
+            </div>
+            <div class="hero-stat reveal" style="transition-delay: 120ms">
+              <p class="hero-stat__value"><span class="hero-stat__number" data-count-to="20" data-suffix=" yrs">0</span><span class="pop-mark">+</span></p>
+              <p class="hero-stat__label">Business experience</p>
+            </div>
+            <div class="hero-stat reveal" style="transition-delay: 180ms">
+              <p class="hero-stat__value"><a href="#industries" class="hero-stat__link"><span class="hero-stat__number" data-count-to="6">0</span></a></p>
+              <p class="hero-stat__label"><a href="#industries" class="hero-stat__link">Industries <span class="pop-mark">&rarr;</span></a></p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ===================================================================
+           MY PITCH — video introduction
+           =================================================================== -->
+      <section class="section pitch">
+        <div class="container">
+          <div class="section-header section-header--center reveal">
+            <p class="eyebrow">My Pitch</p>
+            <h2 class="section-title">Why you should hire me</h2>
+          </div>
+
+          <div class="pitch__video-wrap reveal">
+            <div id="intro-video" class="hero__video">
+              <!--
+                LOOM VIDEO SLOT
+                Once the real Loom video is recorded, replace this placeholder
+                button with:
+                <div class="loom loom--live">
+                  <iframe src="YOUR_LOOM_EMBED_URL" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Roz Gleave — 2-minute pitch"></iframe>
+                </div>
+              -->
+              <button class="loom loom--placeholder" type="button" aria-label="2-minute pitch video coming soon">
+                <div class="loom__play">
+                  <svg width="22" height="26" viewBox="0 0 22 26" fill="none" aria-hidden="true">
+                    <path d="M0 0L22 13L0 26V0Z" fill="currentColor" />
+                  </svg>
+                </div>
+                <span class="loom__label">2-Minute Pitch</span>
+                <span class="loom__sublabel">Coming soon</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           PROOF — results strip
+           =================================================================== -->
+      <section id="proof" class="section section--dark results">
+        <div class="container">
+          <div class="section-header section-header--center reveal">
+            <p class="eyebrow">The Proof</p>
+            <h2 class="section-title">Proof, not promises</h2>
+          </div>
+
+          <div class="results__grid">
+            <div class="results__card reveal" style="transition-delay: 0ms">
+              <span class="results__value">20<span class="pop-mark">+</span> years</span>
+              <span class="results__label">Founding &amp; scaling 2 companies</span>
+              <span class="results__context">Deshabillé — Australia &amp; Hong Kong entities, 2005–2025</span>
+            </div>
+            <div class="results__card reveal" style="transition-delay: 60ms">
+              <span class="results__value">150<span class="pop-mark">+</span></span>
+              <span class="results__label">retail stockists</span>
+              <span class="results__context">Secured wholesale stockists across Australia and New Zealand</span>
+            </div>
+            <div class="results__card reveal" style="transition-delay: 120ms">
+              <span class="results__value">$500K<span class="pop-mark">+</span></span>
+              <span class="results__label">annual account sales at peak</span>
+              <span class="results__context">The Iconic Australia — grown through active account management and stakeholder relationships</span>
+            </div>
+            <div class="results__card reveal" style="transition-delay: 180ms">
+              <span class="results__value">$100K<span class="pop-mark">–</span>$150K</span>
+              <span class="results__label">David Jones orders, twice yearly</span>
+              <span class="results__context">Purchase-order value sustained over several years</span>
+            </div>
+            <div class="results__card reveal" style="transition-delay: 240ms">
+              <span class="results__value">5 Asian markets</span>
+              <span class="results__label">entered through one partnership</span>
+              <span class="results__context">Zalora expansion: Singapore, Hong Kong, Taiwan, Malaysia, Philippines</span>
+            </div>
+            <div class="results__card reveal" style="transition-delay: 300ms">
+              <span class="results__value">$5K<span class="pop-mark">–</span>$80K</span>
+              <span class="results__label">Digital transformation projects quoted and delivered</span>
+              <span class="results__context">Sold digital transformation work by making technical complexity make commercial sense.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           WHY ROZ — five reasons
+           =================================================================== -->
+      <section id="why-roz" class="section section--alt reasons">
+        <div class="container">
+          <div class="section-header section-header--center reveal">
+            <p class="eyebrow">Why Roz</p>
+            <h2 class="section-title">Five reasons to put Roz on a call with your buyers</h2>
+          </div>
+
+          <div class="reasons__list">
+            <!-- Reason 01 -->
+            <details class="reason reveal">
+              <summary class="reason__summary">
+                <span class="reason__number">01</span>
+                <h3 class="reason__title">I built a business where every sale mattered</h3>
+                <span class="reason__toggle-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="reason__grid">
+                <div class="reason__text">
+                  <p class="reason__claim">
+                    I spent almost 20 years building and growing my own fashion business. Every lead,
+                    every sale and every customer mattered, because the business only grew if I could
+                    create opportunities, build relationships, negotiate, sell, retain accounts and
+                    deliver on what I promised.
+                  </p>
+                  <ul class="reason__evidence">
+                    <li>Founded and ran Deshabillé for 20 years across DTC, wholesale and marketplace channels</li>
+                    <li>Owned every commercial outcome personally — there was no separate sales team to fall back on</li>
+                    <li>Built the business from zero to a genuine multi-channel retail operation</li>
+                  </ul>
+                  <div class="reason__matters">
+                    <span class="reason__matters-label">Why it matters to you</span>
+                    <p>
+                      As a former founder, I will treat your business like my own. Your success is my
+                      success — I know what it costs to win a customer, and I know what it costs to
+                      lose one.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="reason__image">
+                  <img
+                    src="images/deshabille-banner.jpg"
+                    alt="Deshabillé — the fashion brand Roz founded and ran for 20 years"
+                    loading="lazy"
+                    width="800"
+                    height="533"
+                  />
+                </div>
+              </div>
+            </details>
+
+            <!-- Reason 02 -->
+            <details class="reason reveal">
+              <summary class="reason__summary">
+                <span class="reason__number">02</span>
+                <h3 class="reason__title">I have closed and grown major commercial partnerships</h3>
+                <span class="reason__toggle-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="reason__grid">
+                <div class="reason__text">
+                  <p class="reason__claim">
+                    The biggest commercial relationships in my business weren't handed to me. I
+                    negotiated them personally, and then did the harder job of growing and keeping
+                    them.
+                  </p>
+                  <ul class="reason__evidence">
+                    <li>Personally negotiated the David Jones wholesale partnership — orders of $100K–$150K, twice a year, sustained over several years</li>
+                    <li>Personally negotiated The Iconic marketplace partnership, growing the account to more than $500K in annual sales at its peak</li>
+                    <li>Personally negotiated the Zalora Asia expansion, opening Hong Kong, Taiwan, the Philippines, Malaysia and Singapore</li>
+                    <li>Grew the wholesale footprint to 150+ retail stockists nationally</li>
+                  </ul>
+                  <div class="reason__matters">
+                    <span class="reason__matters-label">Why it matters to you</span>
+                    <p>
+                      This is the part of the job that matters most after the contract is signed:
+                      earning trust, influencing the people who make the decisions, negotiating the
+                      next opportunity, and turning one deal into an ongoing relationship instead of a
+                      one-off sale.
+                    </p>
+                  </div>
+                </div>
+
+                <!--
+                  Partner evidence: logos used only where Roz holds the asset
+                  (The Iconic). David Jones and Zalora are plain text badges —
+                  no logo usage, no implication of current endorsement.
+                -->
+                <div class="reason__partners">
+                  <div class="partner-badge">
+                    <img src="images/the-iconic-logo.png" alt="The Iconic — marketplace partnership, negotiated personally" class="partner-badge__logo" loading="lazy" />
+                  </div>
+                  <div class="partner-badge">
+                    <img src="images/david-jones-logo.jpeg" alt="David Jones — wholesale partner, $100K–$150K orders twice yearly" class="partner-badge__logo partner-badge__logo--bleed" loading="lazy" />
+                  </div>
+                  <div class="partner-badge">
+                    <img src="images/zalora-logo.jpeg" alt="Zalora — Asia market expansion across 5 markets" class="partner-badge__logo" loading="lazy" />
+                  </div>
+                  <div class="partner-badge partner-badge--photo">
+                    <img src="images/stockists-photo.jpeg" alt="150+ retail stockists — national wholesale footprint" class="partner-badge__photo" loading="lazy" />
+                    <span class="partner-badge__overlay">150+ Stockists AU &amp; NZ</span>
+                  </div>
+                </div>
+              </div>
+            </details>
+
+            <!-- Reason 03 -->
+            <details class="reason reason--no-image reason--left-align reveal">
+              <summary class="reason__summary">
+                <span class="reason__number">03</span>
+                <h3 class="reason__title">I can sell complex, high-value solutions</h3>
+                <span class="reason__toggle-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="reason__grid reason__grid--no-image">
+                <div class="reason__text">
+                  <p class="reason__claim">
+                    My later work moved into enterprise software, business systems, automation and
+                    digital transformation. I ran the full cycle myself — discovery, quoting, pitching
+                    — then stayed on to project manage delivery once the client said yes.
+                  </p>
+                  <ul class="reason__evidence">
+                    <li>Led discovery workshops across finance, operations and executive stakeholders</li>
+                    <li>Quoted and pitched projects ranging from $5K to $177K, closing deals up to $100K and securing stakeholder buy-in throughout</li>
+                    <li>Worked across multiple stakeholders to align a solution before it was ever pitched</li>
+                    <li>Project managed delivery after the close — not just the pitch, the outcome</li>
+                  </ul>
+                  <div class="reason__matters">
+                    <span class="reason__matters-label">Why it matters to you</span>
+                    <p>
+                      This proves I can sit inside a sophisticated offer, ask intelligent questions,
+                      and connect what you sell to the buyer's actual problem — selling consultatively,
+                      not leaning on a script or pressure, and staying accountable for what happens
+                      after the yes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </details>
+
+            <!-- Reason 04 -->
+            <details class="reason reason--no-image reason--left-align reveal">
+              <summary class="reason__summary">
+                <span class="reason__number">04</span>
+                <h3 class="reason__title">I build trust and influence decisions</h3>
+                <span class="reason__toggle-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="reason__grid reason__grid--no-image">
+                <div class="reason__text">
+                  <p class="reason__claim">
+                    Across 20 years I've worked with founders, executives, retail buyers,
+                    manufacturers, offshore partners and enterprise stakeholders — people with very
+                    different priorities, all of whom I needed on side. Some of that trust-building
+                    was repair work — stepping in where developers and C-suite stakeholders had
+                    stopped understanding each other, and rebuilding the relationship enough to get
+                    the project back on track.
+                  </p>
+                  <ul class="reason__evidence">
+                    <li>Listening carefully enough to identify the real objection, not just the stated one</li>
+                    <li>Repaired strained client relationships caused by breakdowns between technical teams and executive stakeholders</li>
+                    <li>Influencing outcomes without formal authority over the people in the room</li>
+                    <li>Coached technically-minded founders on the commercial side of running their business — pricing, positioning, growth decisions</li>
+                  </ul>
+                  <div class="reason__matters">
+                    <span class="reason__matters-label">Why it matters to you</span>
+                    <p>
+                      This is the skill set that a high-ticket sale actually runs on: trust built
+                      quickly, questions asked with intent, and enough judgement to read what's really
+                      holding a buyer back.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </details>
+
+            <!-- Reason 05 -->
+            <details class="reason reason--no-image reason--left-align reveal">
+              <summary class="reason__summary">
+                <span class="reason__number">05</span>
+                <h3 class="reason__title">I help you break through the ceiling</h3>
+                <span class="reason__toggle-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="reason__grid reason__grid--no-image">
+                <div class="reason__text">
+                  <p class="reason__claim">
+                    I got into business because I love that there is no ceiling. Whether it's a
+                    business with an operational bottleneck or a buyer stuck on a decision, I'm quick
+                    to spot what's actually holding things up — and I don't stop pushing until we've
+                    moved past it. That's what I've spent my career doing, and it's the same approach
+                    I bring to every sales conversation.
+                  </p>
+                  <ul class="reason__evidence">
+                    <li>Diagnosing the real issue before proposing a solution</li>
+                    <li>Helping prospects move past indecision toward a confident yes — or a confident no</li>
+                    <li>Protecting the company's reputation by not selling past what can be delivered</li>
+                    <li>Caring about fulfilment and the client's outcome, not just the close</li>
+                  </ul>
+                  <div class="reason__matters">
+                    <span class="reason__matters-label">Why it matters to you</span>
+                    <p>
+                      I'm not chasing any sale — I'm looking for sustainable growth, for you and for
+                      the people who buy from you. That's what makes the relationship last past the
+                      first invoice.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           INDUSTRIES
+           =================================================================== -->
+      <section id="industries" class="section section--dark industries">
+        <div class="container">
+          <div class="section-header section-header--center reveal">
+            <p class="eyebrow">Versatility</p>
+            <h2 class="section-title">Agile closing skills across six industries</h2>
+          </div>
+
+          <div class="industries__grid">
+            <div class="industry-chip reveal">AI / Technology</div>
+            <div class="industry-chip reveal" style="transition-delay: 100ms">Digital Marketing</div>
+            <div class="industry-chip reveal" style="transition-delay: 200ms">Retail</div>
+            <div class="industry-chip reveal" style="transition-delay: 300ms">Fashion</div>
+            <div class="industry-chip reveal" style="transition-delay: 400ms">Ecommerce</div>
+            <div class="industry-chip reveal" style="transition-delay: 500ms">Events</div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ===================================================================
+           RECOMMENDATIONS
+           =================================================================== -->
+      <section id="recommendations" class="section recs">
+        <div class="container">
+          <div class="section-header section-header--center reveal">
+            <p class="eyebrow">Don&rsquo;t Just Take My Word For It</p>
+            <h2 class="section-title">LinkedIn verified recommendations</h2>
+          </div>
+
+          <div class="recs__grid">
+            <div class="recs__card reveal" style="transition-delay: 0ms">
+              <span class="recs__quote-mark" aria-hidden="true">&ldquo;</span>
+              <p class="recs__quote-text">&ldquo;Her ability to bridge business needs with technical execution made a real difference to delivery momentum. I would confidently recommend Roz.&rdquo;</p>
+              <p class="recs__attribution"><span class="recs__attribution-name">Branko Banic</span><span class="recs__attribution-role">Operations Manager at Helly Hansen ANZ</span></p>
+              <span class="recs__trait">Supports: Trust &amp; reliability</span>
+            </div>
+            <div class="recs__card reveal" style="transition-delay: 70ms">
+              <span class="recs__quote-mark" aria-hidden="true">&ldquo;</span>
+              <p class="recs__quote-text">&ldquo;Roz brings strong systems thinking, structured delivery and clear communication to technical projects.&rdquo;</p>
+              <p class="recs__attribution"><span class="recs__attribution-name">Muhammad Farhan Abbasi</span><span class="recs__attribution-role">WordPress &amp; Shopify Expert</span></p>
+              <span class="recs__trait">Supports: Communication</span>
+            </div>
+            <div class="recs__card reveal" style="transition-delay: 140ms">
+              <span class="recs__quote-mark" aria-hidden="true">&ldquo;</span>
+              <p class="recs__quote-text">&ldquo;Roz is a proactive problem solver and a collaborative team player who consistently goes above and beyond to deliver high-quality work.&rdquo;</p>
+              <p class="recs__attribution"><span class="recs__attribution-name">Hir Thakkar</span><span class="recs__attribution-role">Digital Collaborator at 6R Retail</span></p>
+              <span class="recs__trait">Supports: Stakeholder influence</span>
+            </div>
+            <div class="recs__card reveal" style="transition-delay: 210ms">
+              <span class="recs__quote-mark" aria-hidden="true">&ldquo;</span>
+              <p class="recs__quote-text">&ldquo;Roz was highly effective at bridging commercial objectives with technical and logistics execution across a multi-layered international rollout.&rdquo;</p>
+              <p class="recs__attribution"><span class="recs__attribution-name">Arpit Karariwal</span><span class="recs__attribution-role">Senior Manager &ndash; Service Transformation, Anchanto</span></p>
+              <span class="recs__trait">Supports: Commercial judgment</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           ABOUT — career bridge / timeline
+           =================================================================== -->
+      <section id="about" class="section section--alt bridge">
+        <div class="container">
+          <div class="section-header section-header--center reveal">
+            <p class="eyebrow">The Path Here</p>
+            <h2 class="section-title">A natural trajectory to closing high-ticket deals</h2>
+            <p class="section-sub">
+              I never planned to be a closer — every stage just happened to lead here.
+            </p>
+          </div>
+
+          <div class="bridge__track">
+            <div class="bridge__stage reveal" style="transition-delay: 0ms">
+              <div class="bridge__dot"></div>
+              <span class="bridge__years">1998–2005</span>
+              <h3 class="bridge__title">Buyer &amp; Brand Manager</h3>
+              <p class="bridge__capability">Launched OP into Myer, ran $1M+ budgets for Myer, Sportsgirl &amp; Target — then designed and sold my own ranges to the buyer.</p>
+            </div>
+            <div class="bridge__stage reveal" style="transition-delay: 90ms">
+              <div class="bridge__dot"></div>
+              <span class="bridge__years">2005–2025</span>
+              <h3 class="bridge__title">Founder</h3>
+              <p class="bridge__capability">Built commercial instinct — every sale and every account mattered to the bottom line.</p>
+            </div>
+            <div class="bridge__stage reveal" style="transition-delay: 180ms">
+              <div class="bridge__dot"></div>
+              <span class="bridge__years">2005–2025</span>
+              <h3 class="bridge__title">Strategic Partnerships</h3>
+              <p class="bridge__capability">Learned to negotiate, close and grow major accounts: David Jones, The Iconic, Zalora.</p>
+            </div>
+            <div class="bridge__stage reveal" style="transition-delay: 270ms">
+              <div class="bridge__dot"></div>
+              <span class="bridge__years">2022–2025</span>
+              <h3 class="bridge__title">Business &amp; Technology Consulting</h3>
+              <p class="bridge__capability">Learned to sell complex, high-value solutions through discovery and stakeholder alignment.</p>
+            </div>
+            <div class="bridge__stage reveal" style="transition-delay: 360ms">
+              <div class="bridge__dot"></div>
+              <span class="bridge__years">Now</span>
+              <h3 class="bridge__title">High-Ticket Sales</h3>
+              <p class="bridge__capability">Bringing 20 years of commercial instinct into a formal, coached, remote closing role.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           WHAT ROZ IS LOOKING FOR
+           =================================================================== -->
+      <section class="section section--alt looking">
+        <div class="container looking__inner">
+          <div class="looking__visual reveal">
+            <img src="images/roz-casual-coast.jpg" alt="Roz Gleave on the Sunshine Coast" class="looking__photo" />
+          </div>
+
+          <div class="looking__content">
+            <div class="section-header reveal">
+              <p class="eyebrow">My Side of the Table</p>
+              <h2 class="section-title"><span class="looking__quote-mark">&ldquo;</span>I&rsquo;m looking for a place to call home, good culture and an aligned offer<span class="looking__quote-mark">&rdquo;</span></h2>
+              <p class="section-sub">My motto: win together.</p>
+            </div>
+
+            <ul class="looking__list reveal">
+              <li>A real opportunity to help people &mdash; genuine value, real alignment</li>
+              <li>Fulfilment that backs up every close &mdash; I&rsquo;ll help make it happen</li>
+              <li>Real coaching and feedback &mdash; I&rsquo;m open and keen to learn your approach</li>
+              <li>A collaborative dynamic &mdash; I thrive solo or as part of a team</li>
+              <li>Consistent pipeline to build real momentum &mdash; I&rsquo;m ready now, and built to perform</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           FINAL CTA
+           =================================================================== -->
+      <section id="lets-talk" class="section section--dark final-cta">
+        <div class="container final-cta__inner">
+          <div class="reveal">
+            <h2 class="section-title final-cta__headline">Looking for a closer who understands both the buyer and the business?</h2>
+            <p class="section-sub final-cta__sub">Let's talk about how I can grow your business.</p>
+
+            <div class="final-cta__actions">
+              <a href="https://calendly.com/roslyngleave/30min" class="btn btn-primary final-cta__primary" target="_blank" rel="noopener noreferrer">Enquire to Hire Roz</a>
+              <a href="mailto:roslyngleave@gmail.com" class="btn btn-secondary">Email Roz</a>
+              <a href="https://www.linkedin.com/in/roslyn-gleave" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View LinkedIn</a>
+            </div>
+
+            <a href="#intro-video" class="btn-ghost final-cta__replay">↑ Watch My Pitch</a>
+
+            <p class="final-cta__note">Book a 30-minute call directly, or email if that&rsquo;s easier.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================================
+         FOOTER
+         ===================================================================== -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span id="footer-year">© 2026 Roz Gleave</span>
+        <div class="footer__links">
+          <a href="mailto:roslyngleave@gmail.com">roslyngleave@gmail.com</a>
+          <a href="https://www.linkedin.com/in/roslyn-gleave" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
