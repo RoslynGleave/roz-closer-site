@@ -1152,6 +1152,24 @@ details[open] > .reason__summary:hover .reason__toggle-icon {
   .reason__image {
     order: -1;
   }
+
+  .reason__summary {
+    padding: var(--space-sm);
+    gap: 0.6rem;
+  }
+
+  .reason__number {
+    font-size: 1.4rem;
+  }
+
+  .reason__summary .reason__title {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+
+  .reason__toggle-icon {
+    font-size: 2.2rem;
+  }
 }
 
 /* =============================================================================
@@ -1172,7 +1190,7 @@ details[open] > .reason__summary:hover .reason__toggle-icon {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 0.4rem;
+  gap: 0;
   text-align: center;
 }
 
@@ -1183,7 +1201,7 @@ details[open] > .reason__summary:hover .reason__toggle-icon {
   font-size: 5rem;
   line-height: 1;
   color: var(--pop);
-  margin-bottom: -0.5rem;
+  margin-bottom: -0.9rem;
 }
 
 .recs__quote-text {
@@ -1191,6 +1209,7 @@ details[open] > .reason__summary:hover .reason__toggle-icon {
   font-style: italic;
   color: var(--white);
   line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
 .recs__attribution {
@@ -1484,6 +1503,10 @@ details[open] > .reason__summary:hover .reason__toggle-icon {
     grid-template-columns: 1fr;
   }
 
+  .looking__photo {
+    margin-inline: auto;
+  }
+
   .looking__list {
     grid-template-columns: 1fr;
   }
@@ -1531,6 +1554,13 @@ details[open] > .reason__summary:hover .reason__toggle-icon {
   color: var(--on-dark-soft);
 }
 
+#lets-talk {
+  /* Trim the large default section padding here specifically — this is
+     the last section before the footer, so less bottom breathing room
+     reads as intentional rather than a gap. */
+  padding-bottom: var(--space-lg);
+}
+
 /* =============================================================================
    FOOTER
    ============================================================================= */
@@ -1543,18 +1573,7 @@ details[open] > .reason__summary:hover .reason__toggle-icon {
 
 .footer__inner {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-xs);
-}
-
-.footer__links {
-  display: flex;
-  gap: var(--space-sm);
-}
-
-.footer__links a:hover {
-  color: var(--pop);
+  justify-content: center;
+  text-align: center;
 }
 
