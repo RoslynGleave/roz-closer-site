@@ -614,7 +614,7 @@ ul {
 
 @media (max-width: 860px) {
   .hero {
-    padding-top: var(--space-sm);
+    padding-top: 0.5rem;
   }
 
   .hero__grid {
@@ -623,12 +623,13 @@ ul {
   }
 
   .hero__tagline {
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.4rem;
   }
 
   .hero__headline {
     max-width: none;
-    margin-bottom: 0.6rem;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
   }
 
   .hero__sub {
@@ -638,13 +639,13 @@ ul {
 
   .hero__ctas {
     justify-content: center;
-    margin-top: var(--space-sm);
+    margin-top: var(--space-xs);
   }
 
   .hero__visual {
-    max-width: 320px;
+    max-width: 300px;
     margin-inline: auto;
-    margin-top: 0.5rem;
+    margin-top: 0.25rem;
     transform: none;
   }
 
