@@ -614,7 +614,7 @@ ul {
 
 @media (max-width: 860px) {
   .hero {
-    padding-top: 0.5rem;
+    padding-top: 0;
   }
 
   .hero__grid {
