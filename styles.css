@@ -634,7 +634,7 @@ ul {
 
   .hero__sub {
     margin-inline: auto;
-    font-size: 0.95rem;
+    font-size: calc(0.95rem - 1pt);
   }
 
   .hero__ctas {
@@ -645,7 +645,7 @@ ul {
   .hero__visual {
     max-width: 300px;
     margin-inline: auto;
-    margin-top: 0.25rem;
+    margin-top: calc(0.25rem - 2mm);
     transform: none;
   }
 
