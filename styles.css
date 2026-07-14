@@ -630,10 +630,11 @@ ul {
     justify-content: center;
   }
 
-  .hero__portrait-wrap {
+  .hero__visual {
     max-width: 320px;
     margin-inline: auto;
     margin-top: var(--space-lg);
+    transform: none;
   }
 
   .hero__stats {
@@ -650,27 +651,6 @@ ul {
   max-width: 760px;
   margin-inline: auto;
   scroll-margin-top: 96px;
-}
-
-@media (max-width: 900px) {
-  .hero__grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero__visual {
-    order: -1;
-    max-width: 340px;
-    margin-inline: auto;
-  }
-
-  .hero__copy {
-    text-align: left;
-  }
-
-  .hero__sub,
-  .hero__credibility {
-    max-width: none;
-  }
 }
 
 /* =============================================================================
