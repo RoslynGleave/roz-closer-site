@@ -614,7 +614,7 @@ ul {
 
 @media (max-width: 860px) {
   .hero {
-    padding-top: var(--space-md);
+    padding-top: var(--space-sm);
   }
 
   .hero__grid {
@@ -622,22 +622,29 @@ ul {
     text-align: center;
   }
 
+  .hero__tagline {
+    margin-bottom: 0.6rem;
+  }
+
   .hero__headline {
     max-width: none;
+    margin-bottom: 0.6rem;
   }
 
   .hero__sub {
     margin-inline: auto;
+    font-size: 0.95rem;
   }
 
   .hero__ctas {
     justify-content: center;
+    margin-top: var(--space-sm);
   }
 
   .hero__visual {
     max-width: 320px;
     margin-inline: auto;
-    margin-top: var(--space-sm);
+    margin-top: 0.5rem;
     transform: none;
   }
 
