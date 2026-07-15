@@ -735,7 +735,7 @@ ul {
 
 @media (max-width: 900px) {
   .pitch {
-    padding-top: var(--space-2xs);
+    padding-top: 8px;
   }
 }
 
