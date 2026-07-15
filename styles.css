@@ -205,6 +205,12 @@ ul {
   margin-bottom: var(--space-xs);
 }
 
+@media (min-width: 901px) {
+  .eyebrow {
+    font-size: calc(1rem + 2pt);
+  }
+}
+
 .section--dark .eyebrow {
   color: var(--dusty-blue);
 }
