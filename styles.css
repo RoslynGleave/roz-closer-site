@@ -157,16 +157,16 @@ ul {
 }
 
 .section {
-  /* Top and bottom padding are split so top can be trimmed independently
-     — one consistent, reduced value above every section header. */
+  /* Bottom padding matches the hero's own bottom spacing so every
+     section boundary reads as the same gap, sitewide. */
   padding-top: var(--space-lg);
-  padding-bottom: var(--space-2xl);
+  padding-bottom: var(--space-lg);
 }
 
 @media (max-width: 900px) {
   .section {
     padding-top: var(--space-md);
-    padding-bottom: var(--space-xl);
+    padding-bottom: var(--space-lg);
   }
 }
 
