@@ -1160,11 +1160,12 @@ details[open] > .reason__summary:hover .reason__toggle-icon {
 
   .reason__summary {
     padding: var(--space-sm);
-    gap: 0.6rem;
+    gap: 1rem;
   }
 
   .reason__number {
     font-size: 1.4rem;
+    margin-left: -2pt;
   }
 
   .reason__summary .reason__title {
