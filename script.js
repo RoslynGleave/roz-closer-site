@@ -139,11 +139,26 @@
     numbers.forEach(animate);
   }
 
+  function initPitchVideo() {
+    var wrap = document.querySelector(".loom--live");
+    if (!wrap) return;
+    var video = wrap.querySelector(".loom__video");
+    var overlay = wrap.querySelector(".loom__play-overlay");
+    if (!video || !overlay) return;
+
+    overlay.addEventListener("click", function () {
+      video.setAttribute("controls", "");
+      overlay.classList.add("is-hidden");
+      video.play();
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initScrollReveal();
     initNavToggle();
     initNavScrollState();
     initFooterYear();
     initStatCountUp();
+    initPitchVideo();
   });
 })();

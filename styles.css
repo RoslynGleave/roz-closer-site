@@ -818,6 +818,45 @@ ul {
   border: 0;
 }
 
+.loom__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: var(--black);
+}
+
+.loom__play-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2xs);
+  background: linear-gradient(150deg, rgba(10, 10, 10, 0.55) 0%, rgba(20, 20, 20, 0.25) 55%, rgba(10, 10, 10, 0.6) 100%);
+  color: var(--white);
+  border: 0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.loom__play-overlay:hover {
+  background: linear-gradient(150deg, rgba(10, 10, 10, 0.68) 0%, rgba(20, 20, 20, 0.35) 55%, rgba(10, 10, 10, 0.72) 100%);
+}
+
+.loom__play-overlay:hover .loom__play {
+  background: var(--pop);
+  color: var(--white);
+}
+
+.loom__play-overlay.is-hidden {
+  display: none;
+}
+
 /* =============================================================================
    RESULTS STRIP (Proof)
    ============================================================================= */

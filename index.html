@@ -153,23 +153,24 @@
 
           <div class="pitch__video-wrap reveal">
             <div id="intro-video" class="hero__video">
-              <!--
-                LOOM VIDEO SLOT
-                Once the real Loom video is recorded, replace this placeholder
-                button with:
-                <div class="loom loom--live">
-                  <iframe src="YOUR_LOOM_EMBED_URL" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Roz Gleave — 2-minute pitch"></iframe>
-                </div>
-              -->
-              <button class="loom loom--placeholder" type="button" aria-label="2-minute pitch video coming soon">
-                <div class="loom__play">
-                  <svg width="22" height="26" viewBox="0 0 22 26" fill="none" aria-hidden="true">
-                    <path d="M0 0L22 13L0 26V0Z" fill="currentColor" />
-                  </svg>
-                </div>
-                <span class="loom__label">2-Minute Pitch</span>
-                <span class="loom__sublabel">Coming soon</span>
-              </button>
+              <div class="loom loom--live">
+                <video
+                  class="loom__video"
+                  poster="images/pitch-video-thumbnail.jpg"
+                  preload="metadata"
+                  playsinline
+                >
+                  <source src="videos/roz-pitch.mp4" type="video/mp4" />
+                </video>
+                <button class="loom__play-overlay" type="button" aria-label="Play 2-minute pitch video">
+                  <div class="loom__play">
+                    <svg width="22" height="26" viewBox="0 0 22 26" fill="none" aria-hidden="true">
+                      <path d="M0 0L22 13L0 26V0Z" fill="currentColor" />
+                    </svg>
+                  </div>
+                  <span class="loom__label">2-Minute Pitch</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
