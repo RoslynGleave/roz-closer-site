@@ -165,8 +165,8 @@ ul {
 
 @media (max-width: 900px) {
   .section {
-    padding-top: var(--space-md);
-    padding-bottom: var(--space-lg);
+    padding-top: 36px;
+    padding-bottom: 52px;
   }
 }
 
