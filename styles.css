@@ -506,7 +506,7 @@ ul {
 .hero__headline {
   font-family: var(--font-headline);
   font-weight: 700;
-  font-size: clamp(2.5rem, 4.8vw, 3.4rem);
+  font-size: clamp(calc(2.5rem + 2pt), 4.8vw, calc(3.4rem + 2pt));
   line-height: 1.12;
   margin: 0 0 1rem;
   max-width: 16ch;
@@ -632,7 +632,7 @@ ul {
 
   .hero__headline {
     max-width: none;
-    font-size: 2.2rem;
+    font-size: calc(2.2rem + 2pt);
     margin-bottom: 0.5rem;
   }
 
@@ -643,7 +643,7 @@ ul {
 
   .hero__ctas {
     justify-content: center;
-    margin-top: var(--space-xs);
+    margin-top: 1.75rem;
   }
 
   .hero__visual {
