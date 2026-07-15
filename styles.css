@@ -825,12 +825,12 @@ ul {
   height: 100%;
   object-fit: cover;
   background: var(--black);
-  /* Source video is 16:9 inside a 16:10 container, so object-fit: cover
-     alone has no vertical slack to crop with (it only trims left/right).
-     Scale up, anchored to the bottom, to push the screen-recording
-     segment's browser chrome/URL bar out the top instead. */
-  transform: scale(1.18);
-  transform-origin: 50% 100%;
+  /* Screen-recording segment has ~23% of browser/OS chrome at the top.
+     Scale up anchored bottom-left: pushes chrome above the visible area
+     without eating into the camera bubble, which sits comfortably clear
+     of the left edge. */
+  transform: scale(1.25);
+  transform-origin: 0% 100%;
 }
 
 .loom__play-overlay {
